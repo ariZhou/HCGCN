@@ -1,0 +1,27 @@
+{
+    "name":"sts",
+    "module_type": "individual",
+    "act_type": "relu",
+    "temporal_emb":  false,
+    "spatial_emb": false,
+    "use_mask": true,
+    "embedding_size": 4,
+    "filters": [
+        [13, 13, 13],
+        [13, 13, 13]
+    ],
+    "batch_size": 60,
+    "optimizer": "adam",
+    "learning_rate": 1e-3,
+    "epochs": 200,
+    "max_update_factor": 1,
+    "adj_filename": "data/RiverFlow/stations_bestadj.csv",
+    "id_filename": "data/RiverFlow/stations.txt",
+    "day": 3,
+    "num_of_vertices": 12,
+    "seq_input": 5,
+    "num_for_predict": 5,
+    "num_of_features": 1,
+    "H5FileName":"data/RiverFlow/riverflow_year2007_2021.h5",
+    "early_stop_steps": 20
+}
